@@ -1,10 +1,16 @@
 # mst_searching
-The algorithm searches a minimum spanning tree and a minimum spanning forest (also known as an optimum branching or a minimum-cost arborescence) in directed graphs by means of Chu-Liu/Edmonds algorithm.
+The algorithm searches a minimum spanning tree (MST) and a minimum spanning forest (MSF) (also known as an optimum branching or a minimum-cost arborescence) in directed graphs by means of Chu-Liu/Edmonds algorithm.
 
 By means of this program you can do the following:
 1. Searching the minimum spanning tree in the directed graph
 2. Searching the minimum forest in the one
 3. Separately it handles the case of the potential graph
+
+
+Prerequisites 
+=============
+
+To generate picture of the minimum spanning tree and forest you should have installed [graphviz](https://graphviz.org/)
 
 
 How to build
@@ -85,7 +91,7 @@ MST (Blue edges are in tree)
 
 ![MST](pics/directed_graph/mst.png)
 
-MSF (Blue edges are in forest)
+MSF for `k = 2` (Blue edges are in forest)
 
 ![MSF](pics/directed_graph/forest.png)
 
@@ -95,11 +101,13 @@ Also in structured view
 
 2. Potential graph
 
-Original potential graph  
+Original non-oriented potential graph  
 
 ![Original graph](pics/potential/potential_graph.png)
 
-MST (Blue edges are in tree)
+MST for the corresponding oriented graph (Blue edges are in tree), i.e., 
+<img src="https://latex.codecogs.com/gif.latex?v_{ij} = p_{ij} - p_{ii}" /> 
+where <img src="https://latex.codecogs.com/gif.latex?v_{ij}" /> is the set of weights of the oriented graph and <img src="https://latex.codecogs.com/gif.latex?p_{ij}" /> is the set of weights of the original potential non-oriented graph
 
 ![MST](pics/potential/mst.png)
 
