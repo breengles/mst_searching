@@ -105,9 +105,8 @@ Original non-oriented potential graph
 
 ![Original graph](pics/potential/potential_graph.png)
 
-MST for the corresponding oriented graph (Blue edges are in tree), i.e., 
-<img src="https://latex.codecogs.com/gif.latex?v_{ij} = p_{ij} - p_{ii}" /> 
-where <img src="https://latex.codecogs.com/gif.latex?v_{ij}" /> is the set of weights of the oriented graph and <img src="https://latex.codecogs.com/gif.latex?p_{ij}" /> is the set of weights of the original potential non-oriented graph
+MST for the corresponding oriented graph (Blue edges are in tree), i.e., `v_ij = p_ij - p_ii`
+where `v_ij` is the set of weights of the oriented graph and `p_ij` is the set of weights of the original potential non-oriented graph
 
 ![MST](pics/potential/mst.png)
 
